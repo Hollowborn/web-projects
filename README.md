@@ -1,2 +1,2 @@
 # web-projects
-A list of web projects I've made so far.
+A list of simple web projects I've made so far.
