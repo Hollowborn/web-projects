@@ -1,0 +1,93 @@
+body {
+  margin: auto;
+  background-color: aliceblue;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-weight: 300;
+  top: 0;
+  right: 5;
+}
+
+h4 {
+  position: absolute;
+  bottom: 0;
+  font-weight: 100;
+}
+
+.nav {
+  display: block;
+  border-radius: 2rem;
+  height: fit-content;
+  width: 100%;
+  color: white;
+  background-color: darkseagreen;
+}
+.container {
+  height: 70%;
+  width: 70%;
+  align-self: center;
+  padding: 2rem;
+  margin: 2rem auto;
+  display: block;
+  background-color: cornflowerblue;
+  border-radius: 2rem;
+
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.circle1 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: white;
+  animation-name: moveCircle;
+  animation-duration: 3s;
+  animation-delay: 1s;
+
+  /* top: 100px;
+  left: 100px; */
+  position: relative;
+}
+.circle2 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: #dddddd;
+  animation-name: moveCircle;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  /* top: 200px;
+  left: 200px; */
+  position: relative;
+}
+.circle3 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: #aaaaaa;
+  animation-name: moveCircle;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  /* top: 300px;
+  left: 300px; */
+  position: relative;
+}
+
+@keyframes moveCircle {
+  from {
+    transform: scale(1.2);
+    background-color: red;
+  }
+  to {
+    transform: scale(1.6);
+    background-color: aquamarine;
+  }
+}
