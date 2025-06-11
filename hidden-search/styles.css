@@ -1,6 +1,6 @@
 :root {
   --color-main: #adbbd5;
-  --color-bg: #332d2d;
+  --color-bg: #2e3030;
 }
 * {
   box-sizing: border-box;
@@ -12,6 +12,7 @@ body {
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: var(--color-bg);
 }
 .container {
@@ -32,7 +33,18 @@ input {
   height: 60px;
   width: 100%;
   font-size: large;
-  border-radius: 6px;
+  border-radius: 6px 0px 0px 6px;
+  border: none;
+  padding-left: 1.2rem;
+  transition: 0.4s ease;
+  margin-right: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 5px var(--color-main);
+  transition: 0.4s ease;
 }
 .search-icon {
   height: 60px;
@@ -44,10 +56,21 @@ button {
   height: 60px;
   width: 60px;
   border-radius: 6px;
+  border: none;
+}
+button:hover {
+  filter: brightness(0.8);
+  scale: 1.05;
 }
 
 img {
   height: 60px;
   width: 60px;
   position: sticky;
+}
+p {
+  font-family: Helvetica, sans-serif;
+  color: var(--color-main);
+  font-weight: 300;
+  font-size: 0.8rem;
 }

@@ -52,6 +52,11 @@ button:hover {
   scale: 1.05;
 }
 
+button:active {
+  filter: brightness(0.6);
+  scale: 1;
+}
+
 h4 {
   color: #1c1b1bee;
 
