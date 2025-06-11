@@ -20,7 +20,7 @@ addButton.addEventListener("click", () => {
     console.error("Invalid input: One or both fields are empty.");
   } else {
     const sum = num1 + num2;
-    result.value = `The sum is: ${sum}`;
+    result.value = `${sum}`;
     console.log(sum);
   }
 });
