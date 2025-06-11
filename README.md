@@ -1,5 +1,5 @@
 # web-projects
-A list of simple web projects I've made so far.
+A list of simple web projects I've made so far. This repo was made as a means to improve my web development skills specifically in vanilla HTML, CSS, and JS.
 
 | Number  | Project Name | Live Demo |
 | :--: | -- |--|
