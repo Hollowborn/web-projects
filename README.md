@@ -10,3 +10,4 @@ A list of simple web projects I've made so far.
 | 5 | Progress Steps  |[link](https://hollowborn.github.io/web-projects/progress-steps/steps.html)|
 | 6 | Hidden Search  |[link](https://hollowborn.github.io/web-projects/hidden-search/search.html)|
 | 7 | Add Numbers  |[link](https://hollowborn.github.io/web-projects/add-numbers/add.html)|
+| 8 | Cat Card  |[link](https://hollowborn.github.io/web-projects/cards/cards.html)|
