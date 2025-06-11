@@ -3,6 +3,10 @@
 A web-based tool that calculates the sum of two numbers (accepts float values).
 
 ### Preview:
+#### Newwest: 
+
+![image](https://github.com/user-attachments/assets/7b0cff0d-c20d-4c26-b24b-5c9e42b35821)
+
 #### New:
 
 ![image](https://github.com/user-attachments/assets/f8c5a294-f6d4-4154-bf1d-e2277731f760)
