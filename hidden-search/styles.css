@@ -1,0 +1,53 @@
+:root {
+  --color-main: #adbbd5;
+  --color-bg: #332d2d;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg);
+}
+.container {
+  margin: auto;
+  border-radius: 6px;
+  display: flex;
+}
+.search-bar {
+  height: 60px;
+  max-width: 177px;
+}
+.search-bar.hidden {
+  height: 0;
+  width: 0;
+}
+
+input {
+  height: 60px;
+  width: 100%;
+  font-size: large;
+  border-radius: 6px;
+}
+.search-icon {
+  height: 60px;
+  width: 60px;
+  transition: 0.4s ease;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border-radius: 6px;
+}
+
+img {
+  height: 60px;
+  width: 60px;
+  position: sticky;
+}
