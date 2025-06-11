@@ -16,7 +16,7 @@ body {
 
 .container {
   margin: 1 auto 0 auto;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1);
   height: fit-content;
   width: 20rem;
   border-radius: 6px;
@@ -46,7 +46,7 @@ button {
   border-radius: 6px;
   border: none;
   margin-top: 1rem;
-  background-color: #4caf50; /* Green */
+  background-color: #888; /* Green */
   color: white;
 }
 
