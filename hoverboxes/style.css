@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-color: #282525;
+  --box-color: #3a3a3a;
+  --color-one: rgb(231, 148, 46);
+  --color-two: rgb(29, 229, 116);
+  --color-three: rgb(29, 130, 230);
+  --color-four: rgb(212, 42, 82);
+}
+body {
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  gap: 0.5rem;
+  width: calc(15 * 3rem + 14 * 0.5rem); /* 15 boxes + 14 gaps */
+  height: calc(15 * 3rem + 14 * 0.5rem);
+  margin: auto;
+}
+.box {
+  background-color: var(--box-color);
+  height: 3rem;
+  transition: all 1s ease-in-out;
+  width: 3rem;
+  box-shadow: 0 0 10px #333;
+}
+
+.box:hover {
+  /* transition: all 0s ease-in-out; */
+  transition-duration: 0.005s;
+
+  /* animation: fade 2s ease-in-out forwards; */
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #dacfcf;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+/* Wasn't used */
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
