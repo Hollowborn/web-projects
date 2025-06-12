@@ -11,3 +11,4 @@ A list of simple web projects I've made so far. This repo was made as a means to
 | 6 | [Hidden Search](https://github.com/Hollowborn/web-projects/tree/main/hidden-search)  |[link](https://hollowborn.github.io/web-projects/hidden-search/search.html)|
 | 7 | [Add Numbers](https://github.com/Hollowborn/web-projects/tree/main/add-numbers)  |[link](https://hollowborn.github.io/web-projects/add-numbers/add.html)|
 | 8 | [Cat Card](https://github.com/Hollowborn/web-projects/tree/main/cards)  |[link](https://hollowborn.github.io/web-projects/cards/cards.html)|
+| 9 | [Hoverboxes](https://github.com/Hollowborn/web-projects/tree/main/hoverboxes)  |[link](https://hollowborn.github.io/web-projects/hoverboxes/hover.html)|
