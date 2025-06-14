@@ -13,6 +13,7 @@ A list of simple web projects I've made so far. This repo was made as a means to
 | 8 | [Cat Card](https://github.com/Hollowborn/web-projects/tree/main/cards)  |[link](https://hollowborn.github.io/web-projects/cards/cards.html)|
 | 9 | [Hoverboxes](https://github.com/Hollowborn/web-projects/tree/main/hoverboxes)  |[link](https://hollowborn.github.io/web-projects/hoverboxes/hover.html)|
 | 10 | [Scrolling Rectangles](https://github.com/Hollowborn/web-projects/tree/main/scrolling-rectangles)  |[link](https://hollowborn.github.io/web-projects/scrolling-rectangles/main.html)|
+| 11 | [Calculator](https://github.com/Hollowborn/web-projects/tree/main/calculator)  |[link](https://hollowborn.github.io/web-projects/calculator/calc.html)|
 
 
 **NOTE:** Most of these projects' layouts are not optimized for mobile view. 
