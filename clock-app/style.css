@@ -17,8 +17,8 @@ body {
   height: 80%;
   margin: auto;
 
-  border-radius: 12px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  /* border-radius: 12px; */
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); */
   overflow: hidden;
   position: relative;
 }
