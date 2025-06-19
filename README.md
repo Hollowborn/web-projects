@@ -14,7 +14,7 @@ A list of simple web projects I've made so far. This repository was made as a me
 | 9 | [Hoverboxes](https://github.com/Hollowborn/web-projects/tree/main/hoverboxes)  |[link](https://hollowborn.github.io/web-projects/hoverboxes/hover.html)|
 | 10 | [Scrolling Rectangles](https://github.com/Hollowborn/web-projects/tree/main/scrolling-rectangles)  |[link](https://hollowborn.github.io/web-projects/scrolling-rectangles/main.html)|
 | 11 | [Calculator](https://github.com/Hollowborn/web-projects/tree/main/calculator)  |[link](https://hollowborn.github.io/web-projects/calculator/calc.html)|
-| 11 | [Calculator](https://github.com/Hollowborn/web-projects/tree/main/clock-app)  |[link](https://hollowborn.github.io/web-projects/clock-app/clock.html)|
+| 11 | [Simple Clock](https://github.com/Hollowborn/web-projects/tree/main/clock-app)  |[link](https://hollowborn.github.io/web-projects/clock-app/clock.html)|
 
 
 **NOTE:** Most of these projects' layouts are not optimized for mobile view. 
