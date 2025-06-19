@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.clock-face {
+  border: 0.1rem solid black;
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
+  margin: auto;
+  margin-top: 2rem;
+  position: relative;
+}
+.hand-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* animation: rotate 30s linear infinite; */
+}
+#hour-hand,
+#sec-hand,
+#min-hand {
+  width: 0.2rem;
+  height: 10rem;
+  background-color: rgb(75, 68, 68);
+  transform: translate(-50%, -100%);
+  transform-origin: bottom center;
+}
+#min-hand {
+  height: 15rem;
+  background-color: #888;
+}
+#sec-hand {
+  height: 17rem;
+  background-color: #8a3d3d;
+}
+
+#time {
+  margin-top: 2rem;
+}
+p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #888;
+
+  margin-bottom: 1rem;
+}
+
+.clock-time {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-time h2 {
+  font-weight: 400;
+}
