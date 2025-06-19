@@ -70,9 +70,10 @@ body {
 }
 
 .design {
-  width: 80%;
+  width: 60%;
   height: 80%;
   background-color: white;
+  margin: auto;
 }
 
 /* Style for Digital Clock */
