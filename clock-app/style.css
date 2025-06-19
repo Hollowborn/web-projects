@@ -32,6 +32,17 @@ body {
   margin-top: 2rem;
   position: relative;
 }
+.clock-design {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #888;
+  left: 50%;
+  top: 48%;
+  border-radius: 50%;
+  border: 0.5rem solid #8a3d3d;
+  transform: translate(-50%, 0);
+}
 .hand-wrapper {
   position: absolute;
   top: 50%;
@@ -43,17 +54,18 @@ body {
 #sec-hand,
 #min-hand {
   width: 0.2rem;
-  height: 10rem;
+  height: 7rem;
   background-color: rgb(75, 68, 68);
   transform: translate(-50%, -100%);
   transform-origin: bottom center;
+  border-radius: 1rem;
 }
 #min-hand {
-  height: 15rem;
+  height: 9rem;
   background-color: #888;
 }
 #sec-hand {
-  height: 17rem;
+  height: 12rem;
   background-color: #8a3d3d;
 }
 
