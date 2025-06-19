@@ -17,11 +17,11 @@ function updateClock() {
   // Set the Digital Clock
   hourDig.textContent = hour;
 
-  //   if (min < 10) {
-  //     minDig.textContent = "0" + min;
-  //   } else {
-  minDig.textContent = min;
-  //   }
+  if (min < 10) {
+    minDig.textContent = "0" + min;
+  } else {
+    minDig.textContent = min;
+  }
 
   //   if (sec < 10) {
   //     sec.textContent = "0" + sec;

@@ -29,7 +29,7 @@ body {
   height: 600px;
   width: 600px;
   margin: auto;
-  margin-top: 2rem;
+
   position: relative;
 }
 .clock-design {
@@ -69,6 +69,13 @@ body {
   background-color: #8a3d3d;
 }
 
+.design {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+}
+
+/* Style for Digital Clock */
 #time {
   margin-top: 2rem;
 }
@@ -89,5 +96,22 @@ p {
 }
 
 .clock-time h2 {
-  font-weight: 400;
+  font-weight: 500;
+}
+
+@media (max-width: 750px) {
+  .clock-face {
+    display: none;
+  }
+  body {
+    font-size: 300%;
+  }
+  .clock-time {
+    display: block;
+  }
+  #sec-time,
+  .separate1,
+  .separate2 {
+    display: none;
+  }
 }
