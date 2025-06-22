@@ -46,3 +46,7 @@ p {
   border: 0.5px solid #333;
   width: 33.33%;
 }
+
+.col:hover {
+  background-color: #cec5da;
+}
