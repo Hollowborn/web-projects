@@ -78,3 +78,17 @@ button {
 button:hover {
   transform: scale(1.2);
 }
+
+dialog {
+  position: absolute;
+  margin: auto;
+  height: 25%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}

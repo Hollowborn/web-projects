@@ -3,6 +3,15 @@ const col = document.querySelectorAll(".col");
 const resetButton = document.getElementById("reset");
 const currentMoveText = document.getElementById("current_move");
 
+// Modal elements
+
+const infoModal = document.getElementById("infoModal");
+const closeModalButton = document.getElementById("closeModal");
+
+closeModalButton.addEventListener("click", () => {
+  infoModal.close();
+});
+
 let currentMove = "X";
 let moveArray = [
   [0, 0, 0],
