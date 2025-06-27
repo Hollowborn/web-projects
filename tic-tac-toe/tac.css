@@ -8,14 +8,21 @@ body {
   background-color: #cfdbd6;
   flex-direction: column;
   height: 100vh;
+  font-family: Helvetica;
 }
 h3 {
   font-family: monospace;
   font-size: 200%;
   margin: auto;
 }
+h5 {
+  font-family: monospace;
+  font-weight: 300;
+  font-size: 170%;
+  margin: auto;
+  color: #333;
+}
 p {
-  font-family: Helvetica;
   font-weight: 300;
   font-size: 16px;
   color: #5f5a5a;
@@ -27,6 +34,8 @@ p {
   height: 80%;
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .table {
@@ -45,8 +54,27 @@ p {
 .col {
   border: 0.5px solid #333;
   width: 33.33%;
+  font-size: 300%;
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;
 }
 
 .col:hover {
   background-color: #cec5da;
+}
+
+button {
+  height: 3rem;
+  width: 5rem;
+  margin: auto;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #333;
+  color: #eee;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
 }
