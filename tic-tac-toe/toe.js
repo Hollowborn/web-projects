@@ -8,11 +8,18 @@ const currentMoveText = document.getElementById("current_move");
 const infoModal = document.getElementById("infoModal");
 const closeModalButton = document.getElementById("closeModal");
 
+// Modal text
+const modalHeading = document.getElementById("dialogHeading");
+const modalContent = document.getElementById("dialogContent");
+
 closeModalButton.addEventListener("click", () => {
   infoModal.close();
 });
 
+let counter = 0;
+let moves = ["X", "O"];
 let currentMove = "X";
+let prevMove = "Y";
 let moveArray = [
   [0, 0, 0],
   [0, 0, 0],
@@ -25,19 +32,29 @@ col.forEach((cell, index) => {
     } else {
       if (currentMove == "X") {
         cell.textContent = currentMove;
-        currentMove = "O";
+        currentMove = moves[1];
+        prevMove = moves[0];
         moveArray[Math.floor(index / 3)][index % 3] = 1;
       } else {
         cell.textContent = currentMove;
-        currentMove = "X";
+        currentMove = moves[0];
+        prevMove = moves[1];
         moveArray[Math.floor(index / 3)][index % 3] = -1;
       }
+
+      if (checkWinner()) {
+        displayMessage("Player " + prevMove + " won!");
+      }
+
       cell.classList.add("clicked");
       //   Check if winnder winner, chicken dinner
-      if (index == 6) {
-        checkWinner();
-      }
+
       currentMoveText.textContent = "Current move: " + currentMove;
+      counter++;
+    }
+
+    if (counter == 9) {
+      displayMessage("Draw!", "Click the button below to restart.");
     }
   });
 });
@@ -52,13 +69,21 @@ function resetTiles() {
     cell.classList.remove("clicked");
     currentMoveText.textContent = "Current move: X";
   });
+  counter = 0;
+}
+
+function displayMessage(heading, content) {
+  modalHeading.textContent = heading;
+  modalContent.textContent = content;
+
+  infoModal.showModal();
 }
 
 function checkWinner() {
   // Check rows
   for (let i = 0; i < 3; i++) {
     if (
-      moveArray[i][0] !== "" &&
+      moveArray[i][0] !== 0 &&
       moveArray[i][0] === moveArray[i][1] &&
       moveArray[i][1] === moveArray[i][2]
     ) {
@@ -69,7 +94,7 @@ function checkWinner() {
   // Check columns
   for (let j = 0; j < 3; j++) {
     if (
-      moveArray[0][j] !== "" &&
+      moveArray[0][j] !== 0 &&
       moveArray[0][j] === moveArray[1][j] &&
       moveArray[1][j] === moveArray[2][j]
     ) {
@@ -79,7 +104,7 @@ function checkWinner() {
 
   // Check main diagonal
   if (
-    moveArray[0][0] !== "" &&
+    moveArray[0][0] !== 0 &&
     moveArray[0][0] === moveArray[1][1] &&
     moveArray[1][1] === moveArray[2][2]
   ) {
@@ -88,7 +113,7 @@ function checkWinner() {
 
   // Check anti-diagonal
   if (
-    moveArray[0][2] !== "" &&
+    moveArray[0][2] !== 0 &&
     moveArray[0][2] === moveArray[1][1] &&
     moveArray[1][1] === moveArray[2][0]
   ) {

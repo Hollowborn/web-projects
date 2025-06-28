@@ -79,7 +79,7 @@ button:hover {
   transform: scale(1.2);
 }
 
-dialog {
+dialog[open] {
   position: absolute;
   margin: auto;
   height: 25%;
