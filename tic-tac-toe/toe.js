@@ -20,6 +20,7 @@ let counter = 0;
 let moves = ["X", "O"];
 let currentMove = "X";
 let prevMove = "Y";
+
 let moveArray = [
   [0, 0, 0],
   [0, 0, 0],
@@ -42,15 +43,19 @@ col.forEach((cell, index) => {
         moveArray[Math.floor(index / 3)][index % 3] = -1;
       }
 
-      if (checkWinner()) {
-        displayMessage("Player " + prevMove + " won!");
-      }
-
       cell.classList.add("clicked");
-      //   Check if winnder winner, chicken dinner
 
       currentMoveText.textContent = "Current move: " + currentMove;
       counter++;
+      //   Check if winnder winner, chicken dinner
+      if (checkWinner()) {
+        displayMessage("Player " + prevMove + " won!");
+
+        currentMoveText.textContent = "Player " + prevMove + " won!";
+        col.forEach((cell) => {
+          cell.classList.add("clicked"); // Add this to disable
+        });
+      }
     }
 
     if (counter == 9) {
@@ -67,9 +72,17 @@ function resetTiles() {
   col.forEach((cell) => {
     cell.textContent = ``;
     cell.classList.remove("clicked");
-    currentMoveText.textContent = "Current move: X";
   });
+  // Reset all
+  currentMoveText.textContent = "Current move: X";
   counter = 0;
+  currentMove = moves[0];
+  // Reset array
+  moveArray = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+  ];
 }
 
 function displayMessage(heading, content) {
