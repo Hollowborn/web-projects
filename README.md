@@ -16,7 +16,7 @@ A list of simple web projects I've made so far. This repository was made as a me
 | 11 | [Calculator](https://github.com/Hollowborn/web-projects/tree/main/calculator)  |[link](https://hollowborn.github.io/web-projects/calculator/calc.html)|
 | 12 | [Simple Clock](https://github.com/Hollowborn/web-projects/tree/main/clock-app)  |[link](https://hollowborn.github.io/web-projects/clock-app/clock.html)|
 | 13 | [Tic-Tac-Toe](https://github.com/Hollowborn/web-projects/tree/main/tic-tac-toe)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
-| 14 | [empty](https://github.com/Hollowborn/web-projects/tree/main/tic-tac-toe)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
+| 14 | [To-do List](https://github.com/Hollowborn/web-projects/tree/main/todo-list)  |[link](https://hollowborn.github.io/web-projects/todo-list/todo.html)|
 | 15 | [empty](https://github.com/Hollowborn/web-projects/tree/main/tic-tac-toe)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
 | 16 | [empty](https://github.com/Hollowborn/web-projects/tree/main/tic-tac-toe)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
 | 17 | [empty](https://github.com/Hollowborn/web-projects/tree/main/tic-tac-toe)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
