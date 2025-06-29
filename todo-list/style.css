@@ -4,9 +4,54 @@
   box-sizing: border-box;
 }
 
+/* selection chada chada */
+::selection {
+  color: rgb(64, 71, 69);
+  background-color: aliceblue;
+  border-radius: 2rem;
+}
+
 body {
   display: flex;
   flex-direction: column;
   font-family: Helvetica;
   background-color: rgb(198, 213, 226);
+  height: 100vh;
+}
+
+h1 {
+  font-size: 10rem;
+  margin: auto;
+  color: rgb(50, 85, 82);
+}
+
+form {
+  margin: auto;
+}
+input,
+li {
+  height: 5rem;
+  width: 20rem;
+  font-size: larger;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  transition: 0.3s;
+  background-color: aliceblue;
+  text-decoration: none;
+  margin: 1rem;
+  color: rgb(27, 55, 66);
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  border: 0.1rem rgb(81, 158, 102) solid;
+}
+
+p {
+  color: rgb(102, 107, 107);
+  font-size: 16px;
+  margin: auto;
+  margin-bottom: 1rem;
 }
