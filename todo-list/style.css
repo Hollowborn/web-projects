@@ -30,28 +30,52 @@ form {
 }
 input,
 li {
-  height: 5rem;
+  height: 4rem;
   width: 20rem;
   font-size: larger;
   padding: 1rem;
   border: none;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   outline: none;
   transition: 0.3s;
   background-color: aliceblue;
-  text-decoration: none;
-  margin: 1rem;
+  list-style: none;
   color: rgb(27, 55, 66);
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2);
+}
+input:only-child {
+  border-radius: 1rem;
+}
+li {
+  border-radius: 0;
+  border-top: 1px solid rgb(169, 175, 180);
+  padding-left: 2rem;
+}
+
+li:last-child {
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 input:focus {
   border: 0.1rem rgb(81, 158, 102) solid;
 }
 
-p {
+p,
+small {
   color: rgb(102, 107, 107);
   font-size: 16px;
   margin: auto;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+small {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 12px;
+}
+
+li .marked {
+  text-decoration: line-through;
 }
