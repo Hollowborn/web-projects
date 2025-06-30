@@ -30,8 +30,12 @@ function addTodoList(task) {
   li.addEventListener("contextmenu", (e) => {
     e.preventDefault();
     li.remove();
+    if (document.querySelectorAll("li").length === 0) {
+      inputValue.style.borderRadius = "1rem";
+    }
     addToLocalStorage(); // Update storage after removal
   });
+  inputValue.style.borderRadius = "1rem 1rem 0 0";
   todo_list.appendChild(li);
   addToLocalStorage();
 }
