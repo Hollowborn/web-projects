@@ -76,6 +76,7 @@ small {
   font-size: 12px;
 }
 
-li .marked {
+.marked {
   text-decoration: line-through;
+  color: #b3acac;
 }
