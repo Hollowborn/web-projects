@@ -72,7 +72,7 @@ p {
   text-align: center;
 }
 
-.profile {
+#profile {
   display: flex;
   width: 60%;
   height: 50%;
@@ -84,23 +84,34 @@ p {
   overflow: hidden;
 }
 
-.profile.hidden {
+#profile.hidden {
   display: none;
 }
 
-.profile-image {
+#error-message {
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 28px;
+  text-align: center;
+}
+
+#error-message.hidden {
+  display: none;
+}
+
+#profile-image {
   width: 33%;
   height: 100%;
   display: flex;
 }
-.profile-image img {
+#profile-image img {
   height: 133px;
   width: 133px;
   margin: auto;
   border-radius: 50%;
   border: 0.1rem solid #2f3436;
 }
-.profile-info {
+#profile-info {
   margin-top: 1rem;
   margin-right: 1.5rem;
   text-justify: newspaper;
@@ -112,26 +123,26 @@ p {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.profile-name {
+#profile-name {
   margin-top: 1rem;
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-.profile-stats {
+#profile-stats {
   display: flex;
   margin-top: 1rem;
   width: 100%;
   gap: 1rem;
 }
 
-.profile-repos {
+#profile-repos {
   margin-top: 1.5rem;
   color: #5f5c5c;
 }
 
-.profile:hover {
+#profile:hover {
   /* transition: 0.2s ease; */
   transform: scale(1.05);
 }
