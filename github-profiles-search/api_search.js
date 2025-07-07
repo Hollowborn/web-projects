@@ -9,8 +9,16 @@ let searchQuery;
 form.addEventListener("submit", (e) => {
   // Do stuff here
   e.preventDefault();
-  searchUser(inputValue.value);
+  searchUser(inputValue.value.trim());
   inputValue.value = ``;
+});
+
+document.addEventListener("keydown", function (event) {
+  if (inputValue.value == "") {
+    if (event.key) {
+      inputValue.focus();
+    }
+  }
 });
 
 function searchUser(user) {
