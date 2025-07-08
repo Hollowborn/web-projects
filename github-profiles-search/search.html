@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <h2>GitHub Profiles</h2>
-      <form id="form">
+      <form id="form" autocomplete="off">
         <div class="input-icons">
           <input
             type="text"
@@ -33,17 +33,30 @@
         </div>
         <div id="profile-info">
           <div id="profile-name">User</div>
+          <div id="profile-location">
+            <i class="fa-solid fa-location-dot"></i>
+            <div id="location"></div>
+          </div>
           <div id="profile-bio">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
             nemo labore fugiat delectus dolore voluptate distinctio, eveniet
             tempore? Incidunt, quae.
           </div>
           <div id="profile-stats">
-            <div id="stats-followers">Followers: 1</div>
-            <div id="stats-following">Following: 20</div>
-            <div id="stats-repos">Repos: 5</div>
+            <div id="stats-text">
+              followers &nbsp;
+              <div id="stats-followers">1</div>
+            </div>
+            <div id="stats-text">
+              following &nbsp;
+              <div id="stats-following">20</div>
+            </div>
+            <div id="stats-text">
+              repos &nbsp;
+              <div id="stats-repos">5</div>
+            </div>
           </div>
-          <div id="profile-repos">repo-one, repo-two, repo-three</div>
+          <div id="profile-repos"><a href="" id="profile-link"></a></div>
         </div>
       </div>
       <div id="error-message" class="hidden">user not found!</div>
