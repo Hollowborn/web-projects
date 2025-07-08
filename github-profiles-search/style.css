@@ -67,7 +67,7 @@ p {
   margin: auto;
   margin-bottom: 1rem;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   color: #2f3436;
   text-align: center;
 }
@@ -75,7 +75,7 @@ p {
 #profile {
   display: flex;
   width: 60%;
-  height: 50%;
+  height: 55%;
   background-color: oklch(98.984% 0.0026 230.462);
   margin: auto;
   border: 0.1rem solid #b5b5b5;
@@ -127,7 +127,7 @@ p {
   margin-top: 1rem;
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 #profile-stats {
@@ -135,14 +135,39 @@ p {
   margin-top: 1rem;
   width: 100%;
   gap: 1rem;
+  font-weight: 500;
 }
 
 #profile-repos {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
+}
+#profile-link {
+  margin-top: 0.5rem;
   color: #5f5c5c;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 #profile:hover {
   /* transition: 0.2s ease; */
-  transform: scale(1.05);
+  transform: scale(1.02);
+}
+
+#profile-location {
+  color: #5f5f5f;
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 16px;
+}
+
+.fa-location-dot {
+  font-size: 12px;
+  margin-top: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+#stats-text {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
 }
