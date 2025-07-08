@@ -52,15 +52,16 @@ function displayUserData(user) {
 
   document.getElementById("profile-name").textContent =
     "" + user.login || user.name;
+
+  document.getElementById("location").textContent = user.location || "Earth";
   document.getElementById("image").src = user.avatar_url;
-  document.getElementById("profile-bio").textContent = user.bio;
-  document.getElementById("stats-followers").textContent =
-    "Followers: " + user.followers;
-  document.getElementById("stats-following").textContent =
-    "Following: " + user.following;
-  document.getElementById("stats-repos").textContent =
-    "Repos: " + user.public_repos;
-  document.getElementById("image").setAttribute("href", user.html_url);
+  document.getElementById("profile-bio").textContent =
+    user.bio || "`No bio available.`";
+  document.getElementById("stats-followers").textContent = user.followers;
+  document.getElementById("stats-following").textContent = +user.following;
+  document.getElementById("stats-repos").textContent = user.public_repos;
+  document.getElementById("profile-link").href = user.html_url;
+  document.getElementById("profile-link").textContent = "View Profile";
 }
 
 function displayErrorMessage() {
