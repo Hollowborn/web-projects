@@ -58,7 +58,7 @@ col.forEach((cell, index) => {
       }
     }
 
-    if (counter == 9) {
+    if (counter == 9 && !checkWinner()) {
       displayMessage("Draw!", "Click the button below to restart.");
     }
   });
