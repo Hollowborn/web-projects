@@ -42,19 +42,20 @@ const loadBar = document.getElementById("bar");
 let durationMs = 5000;
 let index = 0;
 let length = 0;
+
+changeText();
 //function to always change
 setInterval(changeText, durationMs);
 
-loadBar.style.width = `0` + `%`;
+loadBar.style.width = `100%`;
 
 function changeText() {
-  loadBar.style.width = "0%";
   testimonyMessage.textContent = testimonies[index].message;
   testimonyImage.src = testimonies[index].src;
   testimonyTitle.textContent = testimonies[index].title;
   testimonyName.textContent = testimonies[index].name;
   index++;
-
+  // loadBar.style.transition = `5s linear`;
   loadBar.style.width = `100%`;
 
   // loadBar.style.width = `0%`;
