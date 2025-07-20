@@ -31,12 +31,17 @@ body {
   width: 90%;
   height: 1rem;
   margin: auto;
+  background-color: #eeedf7;
+  border-radius: 1rem;
 }
 
 .bar {
-  color: #c4c4c4;
+  background-color: #c4c4c4;
   height: 1rem;
-  width: 1rem;
+  width: 10%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  transition: 5s linear;
 }
 .block {
   display: flex;
@@ -47,6 +52,7 @@ body {
 
 .message {
   padding-left: 2rem;
+  padding-right: 2rem;
   font-size: 150%;
   color: #5a6161;
   text-justify: auto;
