@@ -41,7 +41,16 @@ body {
   width: 10%;
   margin-top: 1rem;
   border-radius: 1rem;
-  transition: 5s linear;
+  animation: moveBar 5s linear infinite;
+}
+
+@keyframes moveBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 .block {
   display: flex;
