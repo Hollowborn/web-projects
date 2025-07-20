@@ -16,7 +16,7 @@ const testimonies = [
     title: "Professional Cooker",
     message:
       "This guys cooks, btw. Hire him, make him rich. Do it so, and he will make you more rich.",
-    src: "./images/pikachu.jpg",
+    src: "./images/tim.webp",
   },
   {
     name: "Pikachu",
@@ -37,3 +37,28 @@ const testimonyMessage = document.getElementById("msg");
 const testimonyImage = document.getElementById("img");
 const testimonyTitle = document.getElementById("title");
 const testimonyName = document.getElementById("name");
+const loadBar = document.getElementById("bar");
+
+let durationMs = 5000;
+let index = 0;
+let length = 0;
+//function to always change
+setInterval(changeText, durationMs);
+
+loadBar.style.width = `0` + `%`;
+
+function changeText() {
+  loadBar.style.width = "0%";
+  testimonyMessage.textContent = testimonies[index].message;
+  testimonyImage.src = testimonies[index].src;
+  testimonyTitle.textContent = testimonies[index].title;
+  testimonyName.textContent = testimonies[index].name;
+  index++;
+
+  loadBar.style.width = `100%`;
+
+  // loadBar.style.width = `0%`;
+  if (index >= 4) {
+    index = 0;
+  }
+}
