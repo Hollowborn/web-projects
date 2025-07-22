@@ -19,7 +19,7 @@ A list of simple web projects I've made so far. This repository was made as a me
 | 14 | [To-Do List](https://github.com/Hollowborn/web-projects/tree/main/todo-list)  |[link](https://hollowborn.github.io/web-projects/todo-list/todo.html)|
 | 15 | [GitHub Profiles](https://github.com/Hollowborn/web-projects/tree/main/github-profiles-search)  |[link](https://hollowborn.github.io/web-projects/github-profiles-search/search.html)|
 | 16 | [Testimonial Switcher](https://github.com/Hollowborn/web-projects/tree/main/testimonial-switcher)  |[link](https://hollowborn.github.io/web-projects/testimonial-switcher/main.html)|
-| 17 | [empty](https://github.com/Hollowborn/web-projects/tree/main/tic-tac-toe)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
+| 17 | [Google Search Clone](https://github.com/Hollowborn/web-projects/tree/main/google-clone)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
 | 18 | [empty](https://github.com/Hollowborn/web-projects/tree/main/tic-tac-toe)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
 | 19 | [empty](https://github.com/Hollowborn/web-projects/tree/main/tic-tac-toe)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
 | 20 | [empty](https://github.com/Hollowborn/web-projects/tree/main/tic-tac-toe)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
