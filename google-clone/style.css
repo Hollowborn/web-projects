@@ -43,6 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 10rem;
   justify-content: center;
   align-items: center;
 }
@@ -63,16 +64,21 @@ body {
   color: #ffffff;
 }
 
+.search-bar:hover {
+  opacity: 0.5;
+}
+
 .icons-left,
 .icons-right {
-  width: 50%;
   display: flex;
 }
 
 .icons-left {
   justify-content: start;
+  width: 80%;
 }
 .icons-right {
+  width: 20%;
   justify-content: end;
 }
 
@@ -100,17 +106,36 @@ footer {
 
 .buttons {
   display: flex;
-  margin-top: 2rem;
+
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  width: 90%;
+}
+.lang-color:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .container button {
-  width: 7rem;
+  width: 8rem;
   height: 2rem;
-  margin: 1rem;
   color: #eeeeee;
   background-color: rgb(59, 57, 57);
   border-style: none;
   border-radius: 0.25rem;
+}
+
+.buttons button:hover {
+  /* outline: #eeeeee; */
+  border: 0.05rem #eeeeee solid;
+  cursor: pointer;
 }
 
 .bottom-nav {
@@ -122,7 +147,7 @@ footer {
 .bottom-nav-right {
   display: flex;
   gap: 2rem;
-  margin: 1rem 1rem 0 1rem;
+  margin: 1rem 1rem 0rem 1rem;
   width: 50%;
 }
 
@@ -142,4 +167,9 @@ p:hover {
   height: 0.05rem;
   background-color: #a19d9d;
   opacity: 0.5;
+}
+
+span {
+  font-size: 14px;
+  color: #e6e1e1;
 }
