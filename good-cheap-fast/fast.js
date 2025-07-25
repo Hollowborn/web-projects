@@ -8,18 +8,18 @@ buttons.forEach((button) => {
 });
 function checkSwitches() {
   if (cb1.checked) {
-    if (cb2.checked && cb3.checked) {
-      cb1.checked = false;
-    }
-  }
-  if (cb2.checked) {
-    if (cb1.checked && cb3.checked) {
+    if (cb3.checked && cb1.checked) {
       cb2.checked = false;
     }
   }
-  if (cb3.checked) {
-    if (cb1.checked && cb2.checked) {
+  if (cb2.checked) {
+    if (cb2.checked && cb1.checked) {
       cb3.checked = false;
+    }
+  }
+  if (cb3.checked) {
+    if (cb2.checked && cb3.checked) {
+      cb1.checked = false;
     }
   }
 }
