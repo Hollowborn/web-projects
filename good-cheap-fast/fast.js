@@ -1,25 +1,21 @@
-const cb1 = document.getElementById(`cb1`);
-const cb2 = document.getElementById(`cb2`);
-const cb3 = document.getElementById(`cb3`);
+const good = document.getElementById(`cb1`);
+const cheap = document.getElementById(`cb2`);
+const fast = document.getElementById(`cb3`);
 const buttons = document.querySelectorAll("input");
 
-buttons.forEach((button) => {
-  button.addEventListener("change", () => checkSwitches());
-});
-function checkSwitches() {
-  if (cb1.checked) {
-    if (cb3.checked && cb1.checked) {
-      cb2.checked = false;
+buttons.forEach((button) =>
+  button.addEventListener("change", (e) => checkSwitches(e.target))
+);
+function checkSwitches(target) {
+  if (good.checked && cheap.checked && fast.checked) {
+    if (good == target) {
+      fast.checked = false;
     }
-  }
-  if (cb2.checked) {
-    if (cb2.checked && cb1.checked) {
-      cb3.checked = false;
+    if (cheap == target) {
+      good.checked = false;
     }
-  }
-  if (cb3.checked) {
-    if (cb2.checked && cb3.checked) {
-      cb1.checked = false;
+    if (fast == target) {
+      cheap.checked = false;
     }
   }
 }
