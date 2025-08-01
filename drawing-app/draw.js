@@ -82,3 +82,7 @@ colorPicker.addEventListener("change", (e) => {
 clearCanvas.addEventListener("click", () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
+
+
+// hello world, please why is it failing?
+
