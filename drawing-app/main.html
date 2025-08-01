@@ -8,22 +8,23 @@
   </head>
   <body>
     <div class="container">
-      <canvas class="draw-area"></canvas>
+      <canvas class="draw-area" id="canvas" height="500px" width="500px"></canvas>
       <div class="toolbox">
         <div class="items-left">
-        <button class="brush-minus">-</button>
-        <span>10</span>
-        <button class="brush-plus">+</button>
+        <button class="brush-minus" id="minus">-</button>
+        <span id="number">10</span>
+        <button class="brush-plus" id="plus">+</button>
 
-        <input type="color" class="color-picker"></input>
+        <input type="color" class="color-picker" id="color"></input>
         </div>
         <div class="items-right">
-         <button class="eraser">X</button>
+         <button class="eraser" id="clear">X</button>
          </div>
       </div>
     </div>
     <footer>
       <p>Made by Charles - 2025</p>
     </footer>
+    <script src="draw.js"></script>
   </body>
 </html>
