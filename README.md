@@ -22,7 +22,7 @@ A list of simple web projects I've made so far. This repository was made as a me
 | 17 | [Google Search Clone](https://github.com/Hollowborn/web-projects/tree/main/google-clone)  |[link](https://hollowborn.github.io/web-projects/google-clone/main.html)|
 | 18 | [Good - Cheap - Fast](https://github.com/Hollowborn/web-projects/tree/main/good-cheap-fast)  |[link](https://hollowborn.github.io/web-projects/good-cheap-fast/good.html)|
 | 19 | [Drawing App](https://github.com/Hollowborn/web-projects/tree/main/drawing-app)  |[link](https://hollowborn.github.io/web-projects/drawing-app/main.html)|
-| 20 | [A Game](https://github.com/Hollowborn/web-projects/tree/main/tic-tac-toe)  |[link](https://hollowborn.github.io/web-projects/tic-tac-toe/tic.html)|
+| 20 | [Pokedex](https://github.com/Hollowborn/web-projects/tree/main/pokedex)  |[link](https://hollowborn.github.io/web-projects/pokedex/main.html)|
 
 
 
