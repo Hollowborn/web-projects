@@ -14,7 +14,7 @@ body {
 }
 
 .nav-bar {
-  background-color: #e5e5e5;
+  background-color: rgb(75, 124, 231);
   height: 4rem;
   position: fixed;
   width: 100%;
@@ -24,6 +24,7 @@ h2 {
   text-align: center;
   font-size: 2rem;
   margin-top: 0.5rem;
+  color: yellow;
 }
 .container {
   margin: auto;
@@ -51,8 +52,8 @@ footer p {
 
 img {
   border-radius: 50%;
-  height: 50%;
-  width: 50%;
+  height: 120px;
+  width: 120px;
   margin-top: 10%;
   background-color: #464444;
   margin: auto;
@@ -62,4 +63,31 @@ img {
   width: 100%;
   height: 30%;
   background-color: #464444;
+  display: flex;
+  flex-direction: column;
+}
+
+.poke-name {
+}
+
+.poke-type {
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.poke-name {
+  color: #e5e5e5;
+  font-size: 18px;
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.type-1,
+.type-2 {
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  filter: opacity(0.7);
+  padding: 0 0.5rem 0 0.5rem;
 }
