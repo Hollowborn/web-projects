@@ -32,11 +32,13 @@ const fetchPokemons = async (index) => {
 
 const generateCard = (pokemon) => {
   const pokeEl = document.createElement("div");
-  pokeEl.classlist.add("poke-card");
+  pokeEl.classList.add("poke-card");
 
-  const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(0);
+  const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
   const id = pokemon.id;
-  const type1 = pokemon.types[0].type.name;
+  const type1 =
+    pokemon.types[0].type.name[0].toUpperCase() +
+    pokemon.types[0].type.name.slice(1);
 
   pokeEl.innerHTML = `
     <img src="${pokemon.sprites.front_default}" alt="" />
@@ -51,4 +53,4 @@ const generateCard = (pokemon) => {
   container.appendChild(pokeEl);
 };
 
-getPokemons;
+getPokemons();
