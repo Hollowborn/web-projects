@@ -17,20 +17,21 @@ const types = {
   normal: "#F5F5F5",
 };
 
+const getPokemons = async () => {
+  for (i = 1; i <= count; i++) {
+    fetchPokemons(i);
+  }
+};
 
-function getPokemons(){
-    for(i = 1; i <= count; i++){
-        fetchPokemons(i);
-    }
-}
+const fetchPokemons = async (index) => {
+  const url = `https://pokeapi.co/api/v2/pokemon/${index}`;
+  const result = await fetch(url);
+  const data = await result.json();
+  generateCard(data);
+};
 
-function fetchPokemons(index){
-    const url = `https://pokeapi.co/api/v2/pokemon/${index}`;
-    const result = await fetch(url);
-    const data = await result.json();
-    generateCard(data);
-}
+const generateCard = (pokemon) => {
+  const pokeEl = document.createElement("poke-card");
 
-function generateCard(pokemon){
-
-}
+  const name = pokemon.name;
+};
