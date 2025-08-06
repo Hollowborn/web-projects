@@ -18,6 +18,8 @@ body {
   height: 4rem;
   position: fixed;
   width: 100%;
+  z-index: 100;
+  filter: blur(0.5);
 }
 
 h2 {
@@ -28,6 +30,7 @@ h2 {
 }
 .container {
   margin: auto;
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -52,6 +55,12 @@ footer p {
   display: flex;
   overflow: hidden;
   flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+
+.poke-card:hover {
+  filter: brightness(0.8);
+  transform: scaleY(1.05);
 }
 
 img {
