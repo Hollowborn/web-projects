@@ -19,7 +19,7 @@ const types = {
 
 const getPokemons = async () => {
   for (i = 1; i <= count; i++) {
-    fetchPokemons(i);
+    await fetchPokemons(i);
   }
 };
 
@@ -31,7 +31,24 @@ const fetchPokemons = async (index) => {
 };
 
 const generateCard = (pokemon) => {
-  const pokeEl = document.createElement("poke-card");
+  const pokeEl = document.createElement("div");
+  pokeEl.classlist.add("poke-card");
 
-  const name = pokemon.name;
+  const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(0);
+  const id = pokemon.id;
+  const type1 = pokemon.types[0].type.name;
+
+  pokeEl.innerHTML = `
+    <img src="${pokemon.sprites.front_default}" alt="" />
+        <div class="poke-desc">
+          <div class="poke-name">${name}</div>
+          <div class="poke-type">
+            <div class="type-1">${type1}</div>
+            <div class="type-2">Grass</div>
+          </div>
+        </div>
+  `;
+  container.appendChild(pokeEl);
 };
+
+getPokemons;
