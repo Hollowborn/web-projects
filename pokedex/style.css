@@ -4,6 +4,9 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -68,7 +71,7 @@ img {
   height: 120px;
   width: 120px;
   margin-top: 10%;
-  background-color: #464444;
+  background-color: #eee9e9;
   margin: auto;
 }
 
