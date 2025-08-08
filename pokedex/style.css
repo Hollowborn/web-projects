@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+::selection {
+  background-color: #464444;
+  color: #e5e5e5;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,19 +22,20 @@ body {
 }
 
 .nav-bar {
-  background-color: rgb(44, 45, 46);
+  /* background-color: rgb(44, 45, 46); */
+  background-color: rgb(199, 201, 206);
   height: 4rem;
   position: fixed;
   width: 100%;
   z-index: 100;
-  filter: blur(0.5);
+  filter: opacity(0.7);
 }
 
 h2 {
   text-align: center;
   font-size: 2rem;
   margin-top: 0.5rem;
-  color: yellow;
+  color: rgb(33, 33, 34);
 }
 .container {
   margin: auto;
@@ -45,6 +51,7 @@ footer p {
   font-family: Helvetica;
   font-weight: 300;
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   color: #464444;
 }
@@ -62,8 +69,8 @@ footer p {
 }
 
 .poke-card:hover {
-  filter: brightness(0.8);
-  transform: scaleY(1.05);
+  filter: brightness(0.9);
+  transform: scaleY(1.002);
 }
 
 img {
