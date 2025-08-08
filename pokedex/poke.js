@@ -35,19 +35,23 @@ const generateCard = (pokemon) => {
   pokeEl.classList.add("poke-card");
 
   const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
-  const id = pokemon.id;
+  const id = pokemon.id.toString().padStart(3, "0");
   const type1 =
     pokemon.types[0].type.name[0].toUpperCase() +
     pokemon.types[0].type.name.slice(1);
+  // const type2 =
+  //   pokemon.types[1].type.name[0].toUpperCase() +
+  //     pokemon.types[1].type.name.slice(1) || null;
 
   pokeEl.innerHTML = `
     <img src="${pokemon.sprites.front_default}" alt="" />
-        <div class="poke-desc">
-          <div class="poke-name">${name}</div>
-          <div class="poke-type">
+       <div class="poke-type">
             <div class="type-1">${type1}</div>
-            <div class="type-2">Grass</div>
           </div>
+        <div class="poke-desc">
+         
+          <div class="poke-name">${name}<div class="poke-id">#${id}</div></div>
+         
         </div>
   `;
   container.appendChild(pokeEl);
