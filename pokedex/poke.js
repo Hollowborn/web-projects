@@ -39,6 +39,7 @@ const generateCard = (pokemon) => {
   const type1 =
     pokemon.types[0].type.name[0].toUpperCase() +
     pokemon.types[0].type.name.slice(1);
+  const type1Key = pokemon.types[0].type.name; // e.g., "fire"
   // const type2 =
   //   pokemon.types[1].type.name[0].toUpperCase() +
   //     pokemon.types[1].type.name.slice(1) || null;
@@ -46,7 +47,7 @@ const generateCard = (pokemon) => {
   pokeEl.innerHTML = `
     <img src="${pokemon.sprites.front_default}" alt="" />
        <div class="poke-type">
-            <div class="type-1">${type1}</div>
+            <div class="type-1" style="background-color: ${types[type1Key]};">${type1}</div>
           </div>
         <div class="poke-desc">
          
