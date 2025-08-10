@@ -29,6 +29,7 @@ body {
   width: 100%;
   z-index: 100;
   filter: opacity(0.7);
+  border-radius: 0 0 1rem 1rem;
 }
 
 h2 {
@@ -66,7 +67,7 @@ footer p {
   overflow: hidden;
   flex-direction: column;
   transition: 0.5s ease-in-out;
-  border: 0.5px solid #464444;
+  border: 0.1px solid #464444;
 }
 
 .poke-card:hover {
