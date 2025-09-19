@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(59, 55, 57);
+  color: white;
+  height: 100vh;
+}
+
+footer p {
+  /* margin: auto; */
+  text-align: center;
+  font-weight: 300;
+  /* position: absolute; */
+}
