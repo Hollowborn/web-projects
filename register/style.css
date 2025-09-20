@@ -12,9 +12,97 @@ body {
   height: 100vh;
 }
 
+h2 {
+  font-size: 36px;
+  padding-top: 2rem;
+}
+
+.container {
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  height: 80%;
+  width: 40%;
+  flex-direction: column;
+  text-align: center;
+  border: 0.1rem solid rgb(218, 208, 208);
+  background-color: aliceblue;
+  color: gray;
+  border-radius: 1rem;
+}
+.navbar {
+  height: 20%;
+}
+
+input,
+button {
+  width: 20rem;
+  /* gap: 20rem; */
+  margin: 0 auto;
+
+  border-radius: 1rem;
+  height: 5rem;
+  border: none;
+  background-color: rgb(59, 55, 57);
+  color: aliceblue;
+}
+
+input {
+  padding: 1rem;
+  background-color: rgb(223, 231, 231);
+  border: 0.05rem solid rgb(212, 205, 205);
+}
+
+.checkbox input,
+.checkbox label {
+  height: 1rem;
+  width: 1rem;
+  gap: 1rem;
+}
+
+input:hover {
+  filter: brightness(1.2);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(101, 100, 177);
+  font-weight: 600;
+}
+
+.inputs {
+  gap: 2rem;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+}
+
+label {
+  margin-left: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(1.15);
+}
+
+.somehow-footer {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 footer p {
   /* margin: auto; */
   text-align: center;
   font-weight: 300;
+  margin-top: 1rem;
   /* position: absolute; */
 }
