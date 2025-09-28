@@ -3,4 +3,22 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+}
+table {
+  border: 1px solid black;
+}
+
+footer {
+  font-weight: 300;
+  font-size: 14px;
 }
